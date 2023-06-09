@@ -1,0 +1,4 @@
+html{
+    background: url(../images/bg-repeat.jpg) fixed repeat-x ;
+    background-size: contain;
+}

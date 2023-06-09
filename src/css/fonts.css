@@ -1,0 +1,28 @@
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+#formulario .informacoes-usuario textarea{
+    font-family: 'Roboto', sans-serif;
+}
+
+.texto, #formulario input[type=submit]{
+    color: #ffffff;
+}
+
+.texto h1{
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.texto p{
+    font-size: 3rem;
+}
+
+#formulario input[type=submit], #formulario .aviso.fixo,#formulario .informacoes-usuario input, textarea{
+    font-weight: 700;
+    font-size: 3rem;
+}
+

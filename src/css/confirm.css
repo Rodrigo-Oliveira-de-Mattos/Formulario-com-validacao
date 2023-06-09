@@ -1,0 +1,13 @@
+textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#formulario .informacoes-usuario .campo.negado{
+    border: 1px solid #F52E2E;
+}
+
+#formulario .informacoes-usuario .campo.permitido{
+    border: 1px solid #00C22B;
+}
+
