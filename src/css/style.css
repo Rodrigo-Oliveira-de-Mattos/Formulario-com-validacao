@@ -37,7 +37,13 @@ main{
     padding: 24px;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
+
+#formulario input[type=submit]:active{
+    background-color: #2da66b;
+}
+
 
 #formulario .informacoes-usuario input{
     height: 70px;
