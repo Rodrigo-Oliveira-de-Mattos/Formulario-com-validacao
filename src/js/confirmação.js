@@ -2,9 +2,19 @@ const form = document.querySelector('#formulario');
 const campos = document.querySelectorAll('.campo');
 const span = document.querySelectorAll('#alerta-nome');
 const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-const telRegex = /^(?:\()[0-9]{2}(?:\))\s?[0-9]{4,5}(?:-)[0-9]{4}$/;
-/^(\d{2})(\d{1})(\d{4})(\d{4})/
-"$1.$2.$3-$4"
+const telRegex = /^(?:\()[0-9]{2}(?:\))[0-9]{4,5}(?:-)[0-9]{4}$/;
+
+campos[2].addEventListener('keypress', () => {
+    let telLenght = campos[2].value.length
+
+    if(telLenght === 0){
+        campos[2].value += '('
+    } else if(telLenght === 3){
+        campos[2].value += ')'
+    }  else if(telLenght === 9){
+        campos[2].value += '-'
+    }
+})
 
 form.addEventListener('submit', event => {
     event.preventDefault();
@@ -56,6 +66,3 @@ function validarMensagem(){
         acerto(3)
     }
 }
-
-/^(\d{2})(\d{1})(\d{4})(\d{4})/
-"$1.$2.$3-$4"
